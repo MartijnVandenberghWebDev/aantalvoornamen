@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <label>Geef personeelsnummer op: <input id="zoekNummer" type="number" required min="1" autofocus></label>
+    <button id="zoeken">Zoeken</button>
     <dl id="user">
         <dt>Nummer:</dt>
         <dd id="nummer"></dd>
@@ -22,6 +24,7 @@
         <dd><img id="avatar" src="leeg.png" alt="avatar"></dd>
     </dl>
     <div id="nietGevonden" hidden class="fout">Niet gevonden.</div>
+    <div id="nummerFout" hidden class="fout">Verkeerd nummer.</div>
 </body>
 
 </html>
