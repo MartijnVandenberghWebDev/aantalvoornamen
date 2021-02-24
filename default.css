@@ -91,3 +91,15 @@ dd {
     margin-left: 0;
     margin-bottom: 0.5em;
 }
+
+#bovenGemiddelde {
+    color: blue;
+}
+
+#gemiddelde {
+    color: green;
+}
+
+#onderGemiddelde{
+    color: red;
+}

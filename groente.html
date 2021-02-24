@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <script src="groente.js" defer></script>
+  <link rel="icon" href="javascript.ico" type="image/x-icon">
+  <title>Groentenwinkel</title>
+  <link rel="stylesheet" href="default.css" />
+</head>
+
+<body>
+  <h1>Bestelling</h1>
+  <label>Groente:
+    <select id="groente">
+      <option value="" required>--- maak uw keuze ---</option>
+    </select>
+  </label>
+  <label>Aantal:
+    <input id="aantal" required type="number" min="1">
+  </label>
+  <button id="toevoegen">Toevoegen aan mandje</button>
+
+  <section id="bestelling" hidden>
+    <table>
+      <thead id="hoofding">
+        <tr>
+          <td>Groente</td>
+          <td>Aantal</td>
+          <td>Prijs</td>
+          <td>Te betalen</td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody id="lijstItems">
+      </tbody>
+      <tr class="vet">
+        <td>Totaal</td>
+        <td colspan="3" id="totaal"></td>
+        <td>
+      </tr>
+    </table>
+  </section>
+
+  <div>
+    <p><span id="foutmelding" class="fout" hidden></span></p>
+  </div>
+</body>
+
+</html>
